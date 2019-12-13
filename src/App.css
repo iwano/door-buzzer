@@ -27,21 +27,21 @@
 }
 
 @media (max-device-width: 400px) and (max-device-height: 400px) {
- button {
-   border-radius: 50% !important;
-   font-size: 0 !important;
-   margin-top: 10px !important;
-   height: 70px !important;
-   width: 70px !important;
- }
+  button {
+    border-radius: 50% !important;
+    font-size: 0 !important;
+    margin-top: 10px !important;
+    height: 140px !important;
+    width: 140px !important;
+  }
 
- button svg {
-   margin: 0 !important;
- }
+  button svg {
+    margin: 0 !important;
+  }
 
- footer {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
- }
+  footer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
 }
