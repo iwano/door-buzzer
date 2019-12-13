@@ -41,7 +41,8 @@ const styles = theme => ({
   }
 })
 
-const API_URL = 'https://private-anon-d4f3e03923-blynkapi.apiary-proxy.com/9d0d723f0863442798ddd53f522654e7'
+const API_URL = `${process.env.REACT_APP_BLYNK_CORS_API_URL}/${process.env.REACT_APP_BLYNK_API_KEY}`
+const PIN_ID = process.env.REACT_APP_ARDUINO_PIN_ID
 
 class App extends Component {
   state = {
@@ -78,7 +79,7 @@ class App extends Component {
   }
 
   handleBtnClick = () => {
-    fetch(`${API_URL}/update/D0?value=1`)
+    fetch(`${API_URL}/update/${PIN_ID}?value=1`)
       .then(response => {
         if (response.status >= 200 && response.status < 300) {
           this.setState({
@@ -102,7 +103,7 @@ class App extends Component {
   }
 
   handleBtnRelease = () => {
-    fetch(`${API_URL}/update/D0?value=0`)
+    fetch(`${API_URL}/update/${PIN_ID}?value=0`)
       .then(response => {
         if (response.status >= 200 && response.status < 300) {
           this.setState({
