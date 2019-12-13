@@ -30,18 +30,21 @@
   button {
     border-radius: 50% !important;
     font-size: 0 !important;
-    margin-top: 10px !important;
+    margin-top: 20px !important;
     height: 140px !important;
     width: 140px !important;
   }
 
   button svg {
+    height: 80% !important;
     margin: 0 !important;
+    width: 80% !important;
   }
 
   footer {
+    align-items: center !important;
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
+    margin: 0 auto 10vmax !important;
   }
 }
